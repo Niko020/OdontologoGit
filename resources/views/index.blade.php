@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Medilab Free Bootstrap HTML5 Template</title>
+  <title>Odontologia The angel</title>
   <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
   <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
@@ -12,12 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- =======================================================
-    Theme Name: Medilab
-    Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+  
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -37,11 +32,12 @@
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#banner">Home</a></li>
-                <li class=""><a href="#service">Services</a></li>
-                <li class=""><a href="#about">About</a></li>
-                <li class=""><a href="#testimonial">Testimonial</a></li>
-                <li class=""><a href="#contact">Contact</a></li>
+                <li class="active"><a href="#banner">Inicio</a></li>
+                <li class=""><a href="#service">Servicios</a></li>
+                <li class=""><a href="#about">Acerca de nosotros</a></li>
+                <li class=""><a href="#testimonial">Testimonios</a></li>
+                <li class=""><a href="#contact">Contacto</a></li>
+                <li class=""><a href="#contact">LogIn</a></li>
               </ul>
             </div>
           </div>
@@ -54,9 +50,9 @@
               <img src="img/logo.png" class="img-responsive">
             </div>
             <div class="banner-text text-center">
-              <h1 class="white">Healthcare at your desk!!</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#contact" class="btn btn-appoint">Make an Appointment.</a>
+              <h1 class="white">Odontologia The angel</h1>
+              <p>El servicio que tus dientes piden y tu boca agradece</p>
+              <a href="#contact" class="btn btn-appoint">Realizar una cita</a>
             </div>
             <div class="overlay-detail text-center">
               <a href="#service"><i class="fa fa-angle-down"></i></a>
@@ -72,7 +68,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-4">
-          <h2 class="ser-title">Our Service</h2>
+          <h2 class="ser-title">Servicios</h2>
           <hr class="botm-line">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
         </div>
@@ -91,7 +87,7 @@
               <i class="fa fa-ambulance"></i>
             </div>
             <div class="icon-info">
-              <h4>Emergency Services</h4>
+              <h4>Servicios de Emergencia</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
@@ -102,7 +98,7 @@
               <i class="fa fa-user-md"></i>
             </div>
             <div class="icon-info">
-              <h4>Medical Counseling</h4>
+              <h4>Consulta medica</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
@@ -111,7 +107,7 @@
               <i class="fa fa-medkit"></i>
             </div>
             <div class="icon-info">
-              <h4>Premium Healthcare</h4>
+              <h4>Servicio Premium</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
