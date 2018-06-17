@@ -13,17 +13,29 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        Schema::create('roles', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->timestamps();
+        });
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('dni')->unique();
+            $table->integer('user_roles')->unsigned();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
+        Schema::table('users', function( $table){
+            $table->foreign('user_roles')->references('id')->on('roles')->onDelete('cascade');
+        });
+        
     }
-
+    
+        
+    
     /**
      * Reverse the migrations.
      *
@@ -32,5 +44,7 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+        Schema::dropIfExists('roles');
+        
     }
 }
