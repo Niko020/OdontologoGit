@@ -18,11 +18,11 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
+         
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('dni')->unique();
             $table->integer('user_roles')->unsigned();
             $table->string('password');
             $table->rememberToken();
@@ -30,6 +30,19 @@ class CreateUsersTable extends Migration
         });
         Schema::table('users', function( $table){
             $table->foreign('user_roles')->references('id')->on('roles')->onDelete('cascade');
+        });
+        Schema::create('usersDatos', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('dni')->unique();
+            $table->string('direccion');
+            $table->date('fechaDeNacimiento');
+            $table->string('obraSocial');
+            $table->integer('numeroObraSocial');
+            $table->integer('user_id')->unsigned();
+            $table->timestamps();
+        });
+         Schema::table('usersDatos', function( $table){
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
         
     }
@@ -45,6 +58,7 @@ class CreateUsersTable extends Migration
     {
         Schema::dropIfExists('users');
         Schema::dropIfExists('roles');
+        Schema::dropIfExists('usersDatos');
         
     }
 }

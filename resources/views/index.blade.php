@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 
 <head>
   <meta charset="utf-8">
@@ -37,8 +37,9 @@
                 <li class=""><a href="#about">Acerca de nosotros</a></li>
                 <li class=""><a href="#testimonial">Testimonios</a></li>
                 <li class=""><a href="#contact">Contacto</a></li>
-                <li class=""><a href="{{ url('/login') }}">Login</a></li>  
+                <li class=""><a href="{{ route('login') }}">Login</a></li>
               </ul>
+                
             </div>
           </div>
         </div>
