@@ -15,7 +15,8 @@
   
 </head>
     
-<body  id="banner" class="banner">
+<body  id="banner" class="banner" >
+    <div class="bg-color">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="col-md-12">
@@ -27,7 +28,7 @@
 				      </button>
               <a class="navbar-brand" href="/"><img src="storage/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
             </div>
-            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <div class="collapse navbar-collapse navbar-right"  id="myNavbar">
               <ul class="nav navbar-nav">
                     @guest
                             <li class="nav-item">
@@ -129,7 +130,7 @@
     </div>
   </footer>
   <!--/ footer-->
-
+</div>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

@@ -30,6 +30,10 @@ class RegisterController extends Controller
      */
     protected $redirectTo = '/home';
 
+        //cantidad de login 
+    protected $maxLoginAttemps = 3;
+    //tiempo afuera / baneado
+    protected $lockOutTime = 4000000;
     /**
      * Create a new controller instance.
      *

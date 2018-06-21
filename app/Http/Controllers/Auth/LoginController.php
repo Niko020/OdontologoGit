@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
 
 class LoginController extends Controller
 {
@@ -26,7 +27,19 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
+    
+    //cantidad de login 
+    protected $maxLoginAttemps = 3;
+    //tiempo afuera / baneado
+    protected $lockOutTime = 4000000;
 
+      protected function hasTooManyLoginAttemps(Request $request)
+    {
+          dd($request);
+        return $this->limiter()->tooManyAttemps(
+                $this->throttleKey($request),6,30
+        );
+    }
     /**
      * Create a new controller instance.
      *
@@ -36,4 +49,6 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+    
+  
 }
