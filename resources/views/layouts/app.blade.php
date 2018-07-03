@@ -39,6 +39,11 @@
                             </li>
                         @else
                             <li class="nav-item dropdown">
+                              <a id="navbarDropdown" class="nav-link dropdown-toggle dropdown-menu-right" href="{{route('consultarTurno')}}">Consultar Turnos</a>
+                              <a id="navbarDropdown" class="nav-link dropdown-toggle dropdown-menu-right" href="">Editar Turnos</a>
+                              <a id="navbarDropdown" class="nav-link dropdown-toggle dropdown-menu-right" href="">Reservar Turnos</a>
+                            </li>
+                            <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
@@ -55,6 +60,7 @@
                                     </form>
                                 </div>
                             </li>
+
                         @endguest
               </ul>
                 
@@ -135,8 +141,9 @@
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
 </body>
-
+                {!!$calendar_details->script() !!}
 </html>

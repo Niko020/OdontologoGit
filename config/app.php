@@ -150,7 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Collective\Html\HtmlServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -174,7 +174,8 @@ return [
     */
 
     'aliases' => [
-
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,

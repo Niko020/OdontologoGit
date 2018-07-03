@@ -18,7 +18,28 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
-         
+        // inserto em la tabla rol lo que hago
+        //se puede hacer de otra forma pero paja buscar        
+        DB::table('roles')->insert(
+            array(
+                'name' => 'usuario'
+            )
+        );
+        DB::table('roles')->insert(
+            array(
+                'name' => 'secretaria'
+            )
+        );
+        DB::table('roles')->insert(
+            array(
+                'name' => 'doctor'
+            )
+        );
+        DB::table('roles')->insert(
+            array(
+                'name' => 'admin'
+            )
+        );
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');

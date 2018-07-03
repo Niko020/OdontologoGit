@@ -11,18 +11,28 @@
 |
 */
 
+
+Route::resource('tasks', 'TasksController');
 Route::get('/', function () {
     return view('index');
 });
 Route::get('/login', function () {
     return view('login');
 });
+Route::post('events', 'EventController@addEvent')->name('events.add');
 
-Route::get('/calendario', function () {
-    return view('calendario');
-});
+Route::get('/consultarTurno','EventController@index')->name('consultarTurno');
+
+Route::get('/reservarTurno', function () {
+    return view('reservarTurno');
+})->name('reservarTurno');;
+
+Route::get('/modificarTurno', function () {
+    return view('modificarTurno');
+})->name('modificarTurno');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('events', 'EventController@index');
+
