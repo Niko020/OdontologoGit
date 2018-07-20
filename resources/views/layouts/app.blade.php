@@ -39,9 +39,12 @@
                             </li>
                         @else
                             <li class="nav-item dropdown">
-                              <a id="navbarDropdown" class="nav-link dropdown-toggle dropdown-menu-right" href="{{route('consultarTurno')}}">Consultar Turnos</a>
-                              <a id="navbarDropdown" class="nav-link dropdown-toggle dropdown-menu-right" href="">Editar Turnos</a>
-                              <a id="navbarDropdown" class="nav-link dropdown-toggle dropdown-menu-right" href="">Reservar Turnos</a>
+                              <a id="navbarDropdown" class="nav-link dropdown-toggle dropdown-menu-right" href="{{route('consultarTurno')}}">Turnos</a>
+                              
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a id="navbarDropdown" class="nav-link dropdown-toggle dropdown-menu-right" href="{{route('admin')}}">Admin</a>
+                              
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -145,5 +148,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
 </body>
-                {!!$calendar_details->script() !!}
+    @if( !empty($calendar_details))
+    //
+    {!!$calendar_details->script() !!}
+    @endif
 </html>

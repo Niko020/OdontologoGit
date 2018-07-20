@@ -31,7 +31,7 @@ class LoginController extends Controller
     //cantidad de login 
     protected $maxLoginAttemps = 3;
     //tiempo afuera / baneado
-    protected $lockOutTime = 4000000;
+    protected $lockOutTime = 30;
 
       protected function hasTooManyLoginAttemps(Request $request)
     {

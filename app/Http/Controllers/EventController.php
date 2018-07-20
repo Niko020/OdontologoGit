@@ -37,9 +37,9 @@ class EventController extends Controller
         $validator = Validator::make($request->all(), [
             'event_name' => 'required',
             'start_date' => 'required',
-            'end_date' => 'required'
+            
         ]);
- 
+ //'end_date' => 'required'
         if ($validator->fails()) {
         	\Session::flash('warnning','Please enter the valid details');
             return Redirect::to('/consultarTurno')->withInput()->withErrors($validator);
@@ -48,7 +48,7 @@ class EventController extends Controller
         $event = new Event;
         $event->title = $request['event_name'];
         $event->start_date = $request['start_date'];
-        $event->end_date = $request['end_date'];
+        $event->end_date = $request['start_date'];
         $event->save();
  
         \Session::flash('success','Event added successfully.');

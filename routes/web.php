@@ -27,6 +27,8 @@ Route::get('/reservarTurno', function () {
     return view('reservarTurno');
 })->name('reservarTurno');;
 
+Route::get('/admin','AdminController@index')->name('admin');
+
 Route::get('/modificarTurno', function () {
     return view('modificarTurno');
 })->name('modificarTurno');

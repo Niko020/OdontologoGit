@@ -35,7 +35,7 @@
                         </div>
                       </div>
  
-                      <div class="col-xs-3 col-sm-3 col-md-3">
+                      <div class="col-xs-6 col-sm-6 col-md-6">
                         <div class="form-group">
                           {!! Form::label('start_date','Start Date:') !!}
                           <div class="">
@@ -44,7 +44,7 @@
                           </div>
                         </div>
                       </div>
- 
+<!-- 
                       <div class="col-xs-3 col-sm-3 col-md-3">
                         <div class="form-group">
                           {!! Form::label('end_date','End Date:') !!}
@@ -54,7 +54,7 @@
                           </div>
                         </div>
                       </div>
- 
+ -->
                       <div class="col-xs-1 col-sm-1 col-md-1 text-center"> &nbsp;<br/>
                       {!! Form::submit('Add Event',['class'=>'btn btn-primary']) !!}
                       </div>
@@ -65,13 +65,6 @@
                 {!! $calendar_details->calendar() !!}
             </div>
  
-            <div class="panel panel-primary">
-              <div class="panel-heading">Mis Turnos</div>
-              <div class="panel-body" >
-
-              </div>
- 
-            </div>
 @endsection
 
 @section('scripts')
