@@ -36,9 +36,8 @@
                                 <li class="active"><a href="#banner">Inicio</a></li>
                                 <li class=""><a href="#service">Servicios</a></li>
                                 <li class=""><a href="#about">Acerca de nosotros</a></li>
-                                <li class=""><a href="#testimonial">Testimonios</a></li>
-                                <li class=""><a href="#contact">Consultas</a></li>
-
+                                <li class=""><a href="{{route('consultarTurno')}}">Turnos</a></li>
+                                <li class=""><a href="{{route('admin')}}">Admin</a></li>       
                                 @guest
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -88,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-            </di    v>
+            </div>
         </div>
     </section>
     <!--/ banner-->

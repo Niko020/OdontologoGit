@@ -18,6 +18,8 @@
                           <th scope="col">Nombre</th>
                           <th scope="col">Email</th>
                           <th scope="col">Role</th>
+                          <th scope="col">Bloquear</th>
+                          <th scope="col">Eliminar</th>
                         </tr>
                       </thead>
                       <tbody>         
@@ -30,6 +32,7 @@
                           <td> {{$user_array["nombre"]}}</td>
                           <td> {{$user_array["email"]}}</td>
                           <td> {{$user_array["rol"]}}</td>
+                            
                         </tr>
                           <?php
                             $i++;
